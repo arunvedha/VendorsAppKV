@@ -35,9 +35,11 @@
             android:layout_width="40dp"
             android:layout_marginStart="16dp"
             android:src="@drawable/download"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp" />
 
         <EditText
+            android:inputType="textEmailAddress"
             android:id="@+id/user_main"
             android:hint="User Name"
             android:gravity="center_horizontal"
