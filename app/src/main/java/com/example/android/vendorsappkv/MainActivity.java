@@ -82,4 +82,8 @@ public class MainActivity extends AppCompatActivity {
         signup = findViewById(R.id.signup_main);
         forgotPassword = findViewById(R.id.forgot_pass);
     }
+
+    public void openNew(View v){
+        startActivity(new Intent(MainActivity.this,PhoneActivity.class));
+    }
 }

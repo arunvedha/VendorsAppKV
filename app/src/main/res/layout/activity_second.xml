@@ -15,9 +15,10 @@
         android:layout_height="match_parent">
 
         <ImageView
+            android:id="@+id/vehicle_image"
             android:src="@drawable/ic_launcher_background"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
             android:layout_gravity="center_horizontal"/>
 
         <LinearLayout
@@ -30,16 +31,38 @@
                 android:text="Name:"
                 style="@style/CategoryStyle" />
 
-            <!-- Input fields -->
-            <TextView
+
+            <EditText
+                android:id="@+id/vehicle_name"
                 android:layout_height="wrap_content"
                 android:layout_width="0dp"
                 android:layout_weight="2"
-                android:paddingLeft="4dp"
-                android:text="Vehicle Name">
+                android:paddingLeft="4dp">
 
 
-            </TextView>
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:text="Type:"
+                style="@style/CategoryStyle" />
+
+            <!-- Input fields -->
+            <EditText
+                android:id="@+id/vehicle_type"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:paddingLeft="4dp">
+
+
+            </EditText>
         </LinearLayout>
 
         <LinearLayout
@@ -53,15 +76,15 @@
                 style="@style/CategoryStyle" />
 
             <!-- Input fields -->
-            <TextView
+            <EditText
+                android:id="@+id/price_hr"
                 android:layout_height="wrap_content"
                 android:layout_width="0dp"
                 android:layout_weight="2"
-                android:paddingLeft="4dp"
-                android:text="Vehicle Name">
+                android:paddingLeft="4dp">
 
 
-            </TextView>
+            </EditText>
         </LinearLayout>
 
         <LinearLayout
@@ -75,22 +98,79 @@
                 style="@style/CategoryStyle" />
 
             <!-- Input fields -->
-            <TextView
+            <EditText
+                android:id="@+id/price_day"
                 android:layout_height="wrap_content"
                 android:layout_width="0dp"
                 android:layout_weight="2"
-                android:paddingLeft="4dp"
-                android:text="Vehicle Name">
+                android:paddingLeft="4dp">
 
 
-            </TextView>
+            </EditText>
         </LinearLayout>
 
-        <Button
-            android:id="@+id/sign_out"
-            android:text="chumma"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:text="City:"
+                style="@style/CategoryStyle" />
+
+            <!-- Input fields -->
+            <EditText
+                android:id="@+id/city_parked"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:paddingLeft="4dp">
+
+
+            </EditText>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:text="Address of parking"
+                style="@style/CategoryStyle" />
+
+            <!-- Input fields -->
+            <EditText
+                android:id="@+id/parking_adress"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:paddingLeft="4dp">
+
+
+            </EditText>
+        </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <Button
+        android:layout_margin="8dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/sign_out"
+        android:text="LOGOUT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_margin="8dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/add_details"
+        android:text="ADD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+
 
 
     </LinearLayout>

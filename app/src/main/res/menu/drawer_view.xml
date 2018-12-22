@@ -5,19 +5,19 @@
         <item
             android:id="@+id/nav_camera"
             android:icon="@drawable/ic_launcher_background"
-            android:title="@string/app_name" />
+            android:title="PROFILE" />
         <item
             android:id="@+id/nav_cameras"
             android:icon="@drawable/ic_launcher_background"
-            android:title="@string/app_name" />
+            android:title="PERFORMANCE" />
         <item
             android:id="@+id/nav_camerast"
             android:icon="@drawable/ic_launcher_background"
-            android:title="@string/app_name" />
+            android:title="CHAT WITH ADMIN" />
         <item
             android:id="@+id/nav_camerastu"
             android:icon="@drawable/ic_launcher_background"
-            android:title="@string/app_name" />
+            android:title="SIGN OUT" />
     </group>
 
 </menu>
